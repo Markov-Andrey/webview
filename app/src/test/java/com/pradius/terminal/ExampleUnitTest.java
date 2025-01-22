@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.pradius.terminal;
 
 import org.junit.Test;
 
