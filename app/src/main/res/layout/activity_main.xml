@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
-        android:background="@color/white">
+        android:background="@color/black">
 
         <ImageView
             android:id="@+id/loading_image"
