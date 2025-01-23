@@ -1,4 +1,4 @@
-package com.pradius.terminal;
+package com.terminal.pradius;
 
 import android.content.Context;
 import android.os.Environment;

@@ -1,4 +1,4 @@
-package com.pradius.terminal;
+package com.terminal.pradius;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -32,6 +32,7 @@ public class MainActivity extends Activity {
 
         setupWebView(fileManager.readFile());
     }
+
     @SuppressLint("SetJavaScriptEnabled")
     private void setupWebView(String url) {
         WebSettings webSettings = mWebView.getSettings();
@@ -55,6 +56,13 @@ public class MainActivity extends Activity {
                 loadingPlaceholder.setVisibility(View.GONE);
                 mWebView.setVisibility(View.VISIBLE);
             }
+
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                view.loadUrl(url);
+                return true;
+            }
+
             @Override
             public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
                 handleWebViewError();
@@ -73,5 +81,14 @@ public class MainActivity extends Activity {
         mWebView.setVisibility(View.GONE);
         Toast.makeText(MainActivity.this, "Ошибка! Сервис недоступен.", Toast.LENGTH_SHORT).show();
         finish();
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (mWebView.canGoBack()) {
+            mWebView.goBack();
+        } else {
+            super.onBackPressed();
+        }
     }
 }

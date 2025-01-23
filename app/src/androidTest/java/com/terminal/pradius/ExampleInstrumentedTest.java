@@ -1,4 +1,4 @@
-package com.pradius.terminal;
+package com.terminal.pradius;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.pradius.terminal", appContext.getPackageName());
+        assertEquals("com.terminal.pradius", appContext.getPackageName());
     }
 }

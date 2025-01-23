@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.terminal.pradius.MainActivity">
 
     <LinearLayout
         android:id="@+id/loading_placeholder"
@@ -15,7 +15,7 @@
         <ImageView
             android:id="@+id/loading_image"
             android:layout_width="316dp"
-            android:layout_height="146dp"
+            android:layout_height="90dp"
             android:src="@drawable/pradius_nova_logo" />
 
         <ProgressBar
@@ -23,14 +23,13 @@
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="279dp"
             android:layout_height="40dp"
-            android:layout_marginTop="2dp"
+            android:layout_marginBottom="150dp"
             android:progressTint="@android:color/holo_red_light"
             android:visibility="gone"
             tools:visibility="visible" />
 
     </LinearLayout>
 
-    <!-- WebView -->
     <WebView
         android:id="@+id/activity_main_webview"
         android:layout_width="match_parent"
