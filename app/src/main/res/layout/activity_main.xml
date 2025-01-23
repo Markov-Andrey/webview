@@ -18,6 +18,16 @@
             android:layout_height="146dp"
             android:src="@drawable/pradius_nova_logo" />
 
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="279dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:progressTint="@android:color/holo_red_light"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
     </LinearLayout>
 
     <!-- WebView -->
