@@ -1,4 +1,4 @@
-package com.terminal.pradius;
+package com.wh.pradius;
 
 import android.content.Context;
 import android.os.Environment;
@@ -12,7 +12,7 @@ import java.io.InputStreamReader;
 public class FileManager {
     private final Context context;
     private final String configFile = "config.txt";
-    private final String defaultUrl = "http://wt.pradius.local/";
+    private final String defaultUrl = "http://wh.pradius.local";
 
     public FileManager(Context context) {
         this.context = context;

@@ -1,4 +1,4 @@
-package com.terminal.pradius;
+package com.wh.pradius;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

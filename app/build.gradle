@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.terminal.pradius'
+    namespace 'com.wh.pradius'
     compileSdk 35
 
     defaultConfig {
-        applicationId "com.terminal.pradius"
+        applicationId "com.wh.pradius"
         minSdk 24
         targetSdk 35
         versionCode 1

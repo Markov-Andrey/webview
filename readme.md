@@ -3,13 +3,13 @@
 ---
 
 ## Описание проекта
-Pradius Terminal — Android-приложение, загружающее настраиваемый URL в WebView.
+WT.Pradius — Android-приложение, загружающее настраиваемый URL в WebView.
 
 ---
 
 ## Функционал
 - **Настраиваемый URL:**  
-  Приложение читает и записывает URL по умолчанию (`http://192.168.103.222`) в файл `config.txt`.
+  Приложение читает и записывает URL по умолчанию (`http://wh.pradius.local`) в файл `config.txt`.
 - **WebView:**  
   Загружает URL с поддержкой JavaScript.
 - **Экран загрузки:**  
@@ -44,8 +44,8 @@ Pradius Terminal — Android-приложение, загружающее нас
 - **URL по умолчанию:**  
   `http://192.168.103.222`.
 - **Изменение URL:**
-    - Найдите файл по адресу: `/Android/data/com.terminal.pradius/files/config.txt`.
-    - Задайте новый URL внутри файла, например `http://192.168.103.222` или `http://www.onliner.by`.
+    - Найдите файл по адресу: `/Android/data/com.wh.pradius/files/config.txt`.
+    - Задайте новый URL внутри файла, например `http://192.168.103.222` или `http://wh.pradius.local`.
     - Перезапустите приложение.
 
 ---

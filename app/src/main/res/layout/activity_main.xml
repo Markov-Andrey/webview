@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.terminal.pradius.MainActivity">
+    tools:context="com.wh.pradius.MainActivity">
 
     <LinearLayout
         android:id="@+id/loading_placeholder"
