@@ -42,7 +42,7 @@ WT.Pradius — Android-приложение, загружающее настра
 
 ## Настройка
 - **URL по умолчанию:**  
-  `http://192.168.103.222`.
+  `http://wh.pradius.local`.
 - **Изменение URL:**
     - Найдите файл по адресу: `/Android/data/com.wh.pradius/files/config.txt`.
     - Задайте новый URL внутри файла, например `http://192.168.103.222` или `http://wh.pradius.local`.
