@@ -12,7 +12,7 @@ import java.io.InputStreamReader;
 public class FileManager {
     private final Context context;
     private final String configFile = "config.txt";
-    private final String defaultUrl = "http://wt.pradius.local/";
+    private final String defaultUrl = "http://wt.pradius.local";
 
     public FileManager(Context context) {
         this.context = context;
