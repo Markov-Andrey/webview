@@ -10,6 +10,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
     private WebView mWebView;
@@ -35,6 +36,7 @@ public class MainActivity extends Activity {
     private void setupWebView(String url) {
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+
         mWebView.setWebChromeClient(new WebChromeClient() {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
@@ -46,20 +48,30 @@ public class MainActivity extends Activity {
                 }
             }
         });
+
         mWebView.setWebViewClient(new WebViewClient() {
             @Override
             public void onPageFinished(WebView view, String url) {
                 loadingPlaceholder.setVisibility(View.GONE);
                 mWebView.setVisibility(View.VISIBLE);
             }
+            @Override
+            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+                handleWebViewError();
+            }
         });
+
         try {
             mWebView.loadUrl(url);
         } catch (Exception e) {
-            loadingPlaceholder.setVisibility(View.GONE);
-            mWebView.setVisibility(View.GONE);
-            e.printStackTrace();
-            System.err.println("Некорректный URL: " + e.getMessage());
+            handleWebViewError();
         }
+    }
+
+    private void handleWebViewError() {
+        loadingPlaceholder.setVisibility(View.GONE);
+        mWebView.setVisibility(View.GONE);
+        Toast.makeText(MainActivity.this, "Ошибка! Сервис недоступен.", Toast.LENGTH_SHORT).show();
+        finish();
     }
 }
