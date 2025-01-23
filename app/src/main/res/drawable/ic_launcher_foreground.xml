@@ -8,7 +8,7 @@
       android:translateX="15.695"
       android:translateY="15.695">>
         
-      <path android:fillColor="#000" android:fillType="evenOdd" android:pathData="M40.642,34.189V62.77l-5.14,2.849 -5.19,-2.849V22.124L18.737,28.41v35.539l16.764,9.134 16.713,-9.134V28.41l-11.573,-6.286v12.065Z"/>
+      <path android:fillColor="#fff" android:fillType="evenOdd" android:pathData="M40.642,34.189V62.77l-5.14,2.849 -5.19,-2.849V22.124L18.737,28.41v35.539l16.764,9.134 16.713,-9.134V28.41l-11.573,-6.286v12.065Z"/>
         
       <path android:fillColor="#E31E24" android:fillType="evenOdd" android:pathData="M70.952,19.194V53.89l-9.471,5.026v-34.95l-0.128,-0.067 -25.86,-14.093 -25.92,14.108 -0.102,0.06v34.86L0,53.882V19.194l0.06,-0.03L35.5,0l35.4,19.164 0.051,0.03Z"/>
       
