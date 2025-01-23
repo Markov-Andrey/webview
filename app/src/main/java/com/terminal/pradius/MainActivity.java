@@ -82,4 +82,13 @@ public class MainActivity extends Activity {
         Toast.makeText(MainActivity.this, "Ошибка! Сервис недоступен.", Toast.LENGTH_SHORT).show();
         finish();
     }
+
+    @Override
+    public void onBackPressed() {
+        if (mWebView.canGoBack()) {
+            mWebView.goBack();
+        } else {
+            super.onBackPressed();
+        }
+    }
 }
