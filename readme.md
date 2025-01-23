@@ -42,7 +42,7 @@ Pradius Terminal — Android-приложение, загружающее нас
 
 ## Настройка
 - **URL по умолчанию:**  
-  `http://192.168.103.222`.
+  `http://wt.pradius.local`.
 - **Изменение URL:**
     - Найдите файл по адресу: `/Android/data/com.terminal.pradius/files/config.txt`.
     - Задайте новый URL внутри файла, например `http://192.168.103.222` или `http://www.onliner.by`.
